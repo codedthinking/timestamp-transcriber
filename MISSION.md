@@ -6,9 +6,9 @@ Choose or drop an M4A recording, transcribe it locally, title it in the detected
 
 ## Working slices
 
-- [ ] Select or drop an audio file and detect its spoken language.
-- [ ] Transcribe it locally with sentence timestamps.
-- [ ] Generate a title from the transcript and save a named text document.
+- [x] Select or drop an audio file and detect its spoken language.
+- [x] Transcribe it locally with sentence timestamps.
+- [x] Generate a title from the transcript and save a named text document.
 
 ## Real
 
