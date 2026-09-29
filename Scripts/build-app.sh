@@ -9,9 +9,10 @@ BIN_PATH=$(swift build --configuration release --arch arm64 --show-bin-path)
 APP="$ROOT/build/Timestamp Transcriber.app"
 
 rm -rf "$APP"
-mkdir -p "$APP/Contents/MacOS"
+mkdir -p "$APP/Contents/MacOS" "$APP/Contents/Resources"
 cp "$BIN_PATH/Timestamp" "$APP/Contents/MacOS/Timestamp"
 cp "$ROOT/Sources/Info.plist" "$APP/Contents/Info.plist"
+cp "$ROOT/LICENSE" "$APP/Contents/Resources/LICENSE.txt"
 codesign --force --deep --sign - "$APP"
 
 printf 'Built %s\n' "$APP"
